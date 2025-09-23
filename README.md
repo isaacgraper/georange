@@ -1,19 +1,23 @@
 ![Georange](https://raw.githubusercontent.com/isaacgraper/georange/main/images/cover.png)
 
 
-<div align="center">
-
-[![Homepage](https://img.shields.io/badge/georange-Homepage-blue?style=flat-square&logo=homebridge)](https://github.com/isaacgraper/georange)
-
-[![Documentation](https://img.shields.io/badge/Docs-ReadTheDocs-orange?style=flat-square&logo=read-the-docs&logoColor=white)](https://github.com/isaacgraper/georange/tree/main/docs)
-
-[![PyPI](https://img.shields.io/badge/PyPI-georange-red?style=flat-square&logo=pypi)](https://pypi.org/project/georange/)
-
-[![Twitter](https://img.shields.io/badge/Follow-@isaacgraper-1DA1F2?style=flat-square&logo=x&logoColor=white)](https://x.com/isaacgraper)
-
-[![GitHub Issues](https://img.shields.io/badge/Issues-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/isaacgraper/georange/issues)
-
-</div>
+<p align="center">
+  <a href="https://github.com/isaacgraper/georange">
+    <img src="https://img.shields.io/badge/georange-Homepage-blue?style=flat-square&logo=homebridge" alt="Homepage"/>
+  </a>
+  <a href="https://github.com/isaacgraper/georange/tree/main/docs">
+    <img src="https://img.shields.io/badge/Docs-ReadTheDocs-orange?style=flat-square&logo=read-the-docs&logoColor=white" alt="Documentation"/>
+  </a>
+  <a href="https://pypi.org/project/georange/">
+    <img src="https://img.shields.io/badge/PyPI-georange-red?style=flat-square&logo=pypi" alt="PyPI"/>
+  </a>
+  <a href="https://x.com/isaacgraper">
+    <img src="https://img.shields.io/badge/Follow-@isaacgraper-1DA1F2?style=flat-square&logo=x&logoColor=white" alt="Twitter"/>
+  </a>
+  <a href="https://github.com/isaacgraper/georange/issues">
+    <img src="https://img.shields.io/badge/Issues-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="Issues"/>
+  </a>
+</p>
 
 ## What is Georange?
 
