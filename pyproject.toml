@@ -1,26 +1,33 @@
 [build-system]
-requires = ["setuptools >= 77.0.3"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
-[project]
-name = "georange_isaacgraper"
+[tool.poetry]
+name = "georange"
 version = "0.0.1"
-authors = [
-    { name = "Isaac Graper", email = "isaac.graper@gmail.com" }
-]
-description = "A simple package that wrapper functionalities for geospatial analysis and visualization."
+description = "A simple package that wraps functionalities for geospatial analysis and visualization."
+authors = ["Isaac Graper <isaac.graper@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.12"
+homepage = "https://github.com/isaacgraper/georange"
+repository = "https://github.com/isaacgraper/georange"
+documentation = "https://github.com/isaacgraper/georange/tree/main/docs"
+keywords = ["geospatial", "GIS", "visualization", "analysis"]
 classifiers = [
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Scientific/Engineering :: GIS",
 ]
-keywords = ["geospatial", "GIS", "visualization", "analysis"]
-license = "MIT"
-license-files = ["LICEN[CS]E*"]
 
-[project.urls]
-Homepage = "https://github.com/isaacgraper/georange"
-Issues = "https://github.com/isaacgraper/georange/issues"
+packages = [{ include = "georange", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+# runtime deps
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0"
+ruff = "^0.6"
+pytest = "^8.0"
+pre-commit = "^3.0"
