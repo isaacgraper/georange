@@ -21,7 +21,7 @@
 
 ## What is Georange?
 
-Georange is designed as a **wrapper** around **existing GIS tools** (fastkml, geopy, shapely, pyproj) with **extras functionalities** and **real world use-cases**.
+Georange is designed as a **wrapper** around **existing GIS tools** (fastkml, geopy, shapely) with **extras functionalities** and **real world use-cases**.
 
 ## Key Features
 
@@ -30,6 +30,30 @@ What are the functionalities?
 ## Quick Start
 
 How can I use it?
+
+At the development level(and the current level) you need to follow the current steps:
+
+If you don't have a dev setup, ensure this command:
+
+`make setup`
+
+If you already have a dev setup:
+
+`make dev`
+
+For developing purposes, the CLI interface for the library testability and debugging process can be run by:
+
+`poetry run python src/georange/main.py --help`
+
+or
+
+`poetry run python -m src.georange.main --help`
+
+For debug with make, you can use:
+
+`make check`
+
+But there's already a pre-commit-hook configured and installed if you did the right steps into the beginning.
 
 ## Some Examples
 
