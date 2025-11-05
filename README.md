@@ -43,11 +43,11 @@ If you already have a dev setup:
 
 For developing purposes, the CLI interface for the library testability and debugging process can be run by:
 
-`poetry run python src/georange/main.py --help`
+`poetry run python -m georange.main --help`
 
-or
+Extract from sample data for testing the KML file parsing:
 
-`poetry run python -m src.georange.main --help`
+`poetry run python -m georange.main docs/samples/kml_file.kml`
 
 For debug with make, you can use:
 

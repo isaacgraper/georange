@@ -1,6 +1,6 @@
-from io import read
-
 import typer
+
+from georange.io.reader import read
 
 app = typer.Typer()
 
@@ -12,7 +12,7 @@ def process(source: str = typer.Argument(..., help="Geospatial file path")):
     """
     file = read(source, layer=None)
 
-    return print(file.head())
+    return print(file)
 
 
 if __name__ == "__main__":

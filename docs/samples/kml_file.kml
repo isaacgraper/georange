@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>KML file</name>
+
+    <Placemark>
+      <name>A point</name>
+      <description>A simple point</description>
+      <Point>
+        <coordinates>-46.6551,-23.5623,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>B point</name>
+      <description>Another interesting location</description>
+      <Point>
+        <coordinates>-46.6388,-23.5489,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>C point</name>
+      <description>Near the Ibirapuera Park</description>
+      <Point>
+        <coordinates>-46.6577,-23.5874,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D point</name>
+      <description>Close to Paulista Avenue</description>
+      <Point>
+        <coordinates>-46.6629,-23.5645,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>

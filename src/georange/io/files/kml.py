@@ -1,16 +1,18 @@
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from georange.models import GeoSet
 
-def load(path: str | Path):
+
+def parse_kml(path: str | Path) -> GeoSet:
     """
-    Load KML file and extract placemarks into a GeoDataFrame.
+    Load KML file and extract placemarks into a GeoSet.
     """
     tree = ET.parse(path)
     root = tree.getroot()
     ns = {"kml": "http://www.opengis.net/kml/2.2"}
 
-    placemarks = []
+    geoset = []
 
     for pm in root.findall(".//kml:Placemark", ns):
         name = pm.find("kml:name", ns)
@@ -19,13 +21,12 @@ def load(path: str | Path):
 
         if coords is not None:
             lon, lat, *_ = map(float, coords.text.strip().split(","))
-            placemarks.append(
-                {
-                    "name": name.text if name is not None else "Unknown",
-                    "description": desc.text if desc is not None else "",
-                    "lat": lat if lat is not None else None,
-                    "lon": lon if lon is not None else None,
-                }
+            geoset.append(
+                GeoSet(
+                    name=name.text if name is not None else "Unknown",
+                    desc=desc.text if desc is not None else None,
+                    coord=(lat, lon),
+                )
             )
 
-    return placemarks
+    return geoset
