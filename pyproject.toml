@@ -26,9 +26,7 @@ packages = [{ include = "georange", from = "src" }]
 python = "^3.12"
 # runtime deps
 typer = "^0.19.2"
-geopandas = "^1.1.1"
-pandas = "^2.3.3"
-shapely = "^2.1.2"
+geopy = "^2.4.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.0"

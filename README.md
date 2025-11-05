@@ -19,42 +19,16 @@
   </a>
 </p>
 
-## What is Georange?
+# What is Georange?
 
-Georange is designed as a **wrapper** around **existing GIS tools** (fastkml, geopy, shapely) with **extras functionalities** and **real world use-cases**.
+Georange is a lightweight, extensible geospatial analysis toolkit written in Python.
+
+It acts as a wrapper layer around robust GIS libraries like geopy.
 
 ## Key Features
 
-What are the functionalities?
-
-## Quick Start
-
-How can I use it?
-
-At the development level(and the current level) you need to follow the current steps:
-
-If you don't have a dev setup, ensure this command:
-
-`make setup`
-
-If you already have a dev setup:
-
-`make dev`
-
-For developing purposes, the CLI interface for the library testability and debugging process can be run by:
-
-`poetry run python -m georange.main --help`
-
-Extract from sample data for testing the KML file parsing:
-
-`poetry run python -m georange.main docs/samples/kml_file.kml`
-
-For debug with make, you can use:
-
-`make check`
-
-But there's already a pre-commit-hook configured and installed if you did the right steps into the beginning.
-
-## Some Examples
-
-What are the real world use-cases?
+✅ Parse KML files into structured Python objects (GeoSet)
+✅ Compute pairwise distances using accurate geodesic formulas (via geopy)
+✅ Find nearest points between features
+✅ Calculate average distances between all points
+✅ Modular, testable CLI interface built with Typer
