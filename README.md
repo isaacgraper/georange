@@ -32,3 +32,46 @@ It acts as a wrapper layer around robust GIS libraries like geopy.
 ✅ Find nearest points between features
 ✅ Calculate average distances between all points
 ✅ Modular, testable CLI interface built with Typer
+
+⚙️ Quick Start
+
+1. Setup the development environment
+
+Clone and install dependencies with Poetry:
+
+```
+git clone https://github.com/isaacgraper/georange.git
+cd georange
+make setup
+```
+
+If you already have everything incstalled:
+
+`make dev`
+
+2. Run the CLI
+
+Show global help:
+
+`poetry run python -m georange.main --help`
+
+3. Parse a sample KML file
+
+`poetry run python -m georange.main docs/samples/kml_file.kml analyze`
+
+### Pairwise distances between all points
+`poetry run python -m georange.main docs/samples/kml_file.kml distances`
+
+### Find the nearest point to the first one
+`poetry run python -m georange.main docs/samples/kml_file.kml nearest --target-index 0`
+
+### Average distance across all features
+`poetry run python -m georange.main docs/samples/kml_file.kml avgdist`
+
+# Roadmap
+
+- Add support for GeoJSON and Shapefiles
+- Integrate Shapely for geometric operations (area, intersection)
+- Implement plotting utilities with matplotlib and folium
+- Export computed results to CSV/JSON
+- Add optional REST API for remote analysis
