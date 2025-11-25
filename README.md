@@ -28,9 +28,13 @@ It acts as a wrapper layer around robust GIS libraries like geopy.
 ## Key Features
 
 ✅ Parse KML files into structured Python objects (GeoSet)
+
 ✅ Compute pairwise distances using accurate geodesic formulas (via geopy)
+
 ✅ Find nearest points between features
+
 ✅ Calculate average distances between all points
+
 ✅ Modular, testable CLI interface built with Typer
 
 ⚙️ Quick Start
@@ -74,4 +78,5 @@ Show global help:
 - Integrate Shapely for geometric operations (area, intersection)
 - Implement plotting utilities with matplotlib and folium
 - Export computed results to CSV/JSON
+
 - Add optional REST API for remote analysis
